@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180213 12:46:46.389" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\API.robot" id="s1-s1" name="API">
+<test id="s1-s1-t1" name="Get_Value">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>api_session</arg>
+<arg>http://localhost:8085</arg>
+</arguments>
+<msg timestamp="20180213 12:46:47.317" level="INFO">Creating Session using : alias=api_session, url=http://localhost:8085, headers={},                     cookies=None, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20180213 12:46:47.318" starttime="20180213 12:46:47.317"></status>
+</kw>
+<kw name="Get Request" library="RequestsLibrary">
+<doc>Send a GET request on the session object found using the</doc>
+<arguments>
+<arg>api_session</arg>
+<arg>animal</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.352" level="INFO">Get Request using : alias=api_session, uri=animal, headers=None json=None</msg>
+<msg timestamp="20180213 12:46:48.352" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20180213 12:46:48.353" starttime="20180213 12:46:47.318"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${response.json()}</arg>
+</arguments>
+<assign>
+<var>${json}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.355" level="INFO">${json} = {u'person': [{u'emailId': u'johndoe@gmail.com', u'firstName': u'John', u'gender': u'male', u'lastName': u'Doe', u'departments': {u'departmentName': u'Java', u'departmentId': u'1971', u'departmentDescr...</msg>
+<status status="PASS" endtime="20180213 12:46:48.355" starttime="20180213 12:46:48.353"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<assign>
+<var>${status_Code}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.358" level="INFO">${status_Code} = 200</msg>
+<status status="PASS" endtime="20180213 12:46:48.358" starttime="20180213 12:46:48.356"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${status_Code}</arg>
+</arguments>
+<msg timestamp="20180213 12:46:48.360" level="INFO">200</msg>
+<status status="PASS" endtime="20180213 12:46:48.360" starttime="20180213 12:46:48.359"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${json}</arg>
+</arguments>
+<msg timestamp="20180213 12:46:48.361" level="INFO">{u'person': [{u'emailId': u'johndoe@gmail.com', u'firstName': u'John', u'gender': u'male', u'lastName': u'Doe', u'departments': {u'departmentName': u'Java', u'departmentId': u'1971', u'departmentDescription': u'Java 1'}, u'createdDtm': u'null', u'phoneNumber': u'1234567890', u'address': {u'city': u'bangalore', u'area': u'Outer ring road', u'country': u'India', u'zipCode': u'560001', u'state': u'Karnataka', u'streetName': u'Orion building'}, u'updatedDtm': u'null', u'role': {u'roleType': u'Department', u'roleId': u'2971', u'roleName': u'Java admin', u'roleDescription': u'java department'}, u'password': u'12345'}]}</msg>
+<status status="PASS" endtime="20180213 12:46:48.362" starttime="20180213 12:46:48.360"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:46:48.362" critical="yes" starttime="20180213 12:46:47.316"></status>
+</test>
+<test id="s1-s1-t2" name="Create_Dictionary">
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>firstname=Indu</arg>
+<arg>lastname=prasad</arg>
+</arguments>
+<assign>
+<var>${dict1}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.369" level="INFO">${dict1} = {u'firstname': u'Indu', u'lastname': u'prasad'}</msg>
+<status status="PASS" endtime="20180213 12:46:48.370" starttime="20180213 12:46:48.367"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Street=11th Street</arg>
+<arg>pincode=560078</arg>
+</arguments>
+<assign>
+<var>${Addressparam}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.373" level="INFO">${Addressparam} = {u'Street': u'11th Street', u'pincode': u'560078'}</msg>
+<status status="PASS" endtime="20180213 12:46:48.373" starttime="20180213 12:46:48.371"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Address=${Addressparam}</arg>
+</arguments>
+<assign>
+<var>${Address}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.376" level="INFO">${Address} = {u'Address': {u'Street': u'11th Street', u'pincode': u'560078'}}</msg>
+<status status="PASS" endtime="20180213 12:46:48.376" starttime="20180213 12:46:48.374"></status>
+</kw>
+<kw name="Concatenate Dict" library="CreateJson">
+<arguments>
+<arg>${dict1}</arg>
+</arguments>
+<assign>
+<var>${finalJson}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.377" level="INFO">${finalJson} = {u'lastname': u'prasad', u'firstname': u'Indu'}</msg>
+<status status="PASS" endtime="20180213 12:46:48.377" starttime="20180213 12:46:48.376"></status>
+</kw>
+<kw name="Concatenate Dict" library="CreateJson">
+<arguments>
+<arg>${Address}</arg>
+</arguments>
+<assign>
+<var>${finalJson}</var>
+</assign>
+<msg timestamp="20180213 12:46:48.379" level="INFO">${finalJson} = {u'lastname': u'prasad', u'firstname': u'Indu', u'Address': {u'Street': u'11th Street', u'pincode': u'560078'}}</msg>
+<status status="PASS" endtime="20180213 12:46:48.379" starttime="20180213 12:46:48.378"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${finalJson}</arg>
+</arguments>
+<msg timestamp="20180213 12:46:48.380" level="INFO">{u'lastname': u'prasad', u'firstname': u'Indu', u'Address': {u'Street': u'11th Street', u'pincode': u'560078'}}</msg>
+<status status="PASS" endtime="20180213 12:46:48.380" starttime="20180213 12:46:48.379"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:46:48.381" critical="yes" starttime="20180213 12:46:48.364"></status>
+</test>
+<status status="PASS" endtime="20180213 12:46:48.383" starttime="20180213 12:46:46.445"></status>
+</suite>
+<status status="PASS" endtime="20180213 12:46:48.391" starttime="20180213 12:46:46.402"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="2">Suites</stat>
+<stat fail="0" id="s1-s1" name="API" pass="2">Suites.API</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,86 @@
+{
+    "token": "string",
+    "message": 
+    {
+       "external_id": "123456128",
+       "start_date": "2017-11-18",
+       "end_date": "2018-11-30",
+       "cancel_date": "",
+       "cancel_reason": "",
+       "status": "active",	
+       "contacts": [
+          {
+           "external_id": "123456128",
+           "email": "jane@gmail.com",
+           "first_name": "Jane",
+           "last_name": "Doe",
+           "gender": "M",
+           "address": {
+                      "street_number": 816,
+                      "street_name": "Piraube",
+                      "city": "Quebec",
+                      "state": "QC",
+                      "country": "Canada",
+                      "zip_code": "G1C8G6",
+                      "appartment": ""
+                       },
+          "date_of_birth": "1989-04-06",
+          "language": "en-US",
+          "driver_license": "O320306048909",
+          "mobile_phone": "14189999360",
+          "home_phone": "14189999360",
+          "office_phone": "",
+          "status": "consent_required",
+          "marketing_list_id": "0b385eb2-ba8a-11e7-9dec-02370cb022d9",
+          "activation_code": "111",
+          "civility": "mrs"
+          }
+      ],
+      "policy_holders": [
+          "123456128"
+      ],
+      "vehicles": [
+          {
+              "external_id": "123456128",
+              "vin": "123456poiuytre",
+              "make": "JEEP",
+              "model": "Grand Cherokee",
+              "year": "2015",
+              "registration": "517YJB",
+              "color": "",
+              "annual_distance": "",
+              "status": "active",
+              "billing_info": {
+                  "daily_pricing": 0.97,
+                  "base_pricing": [
+                                  ["11/2017", 33.44],
+                                  ["12/2017", 33.44],
+                                  ["01/2018", 33.44],
+                                  ["02/2018", 33.44],
+                                  ["03/2018", 33.44],
+                                  ["04/2018", 33.44],
+                                  ["05/2018", 33.44],
+                                  ["06/2018", 33.44],
+                                  ["07/2018", 33.44],
+                                  ["08/2018", 33.44],
+                                  ["09/2018", 33.44],
+                                  ["10/2018", 33.44]
+                  ],
+                                          "price_per_distance": 0.0193,
+                  "billing_mode": 2
+              },
+              "drivers": [
+                  {
+                  "external_contact_id": "123456128",
+                  "role": "primary",
+                  "start_date": "2017-11-18",
+                  "end_date": "2018-11-30"
+                  }
+              ]
+          }
+      ],
+      "agency_id": "",
+      "external_agent_id": ""
+    }
+   }
+   

@@ -1,0 +1,20 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Suite HeadLess                                                         
+==============================================================================
+GW_Portal                                                             | PASS |
+------------------------------------------------------------------------------
+GW_Portal_HeadLess                                                    | FAIL |
+WebDriverException: Message: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64)
+------------------------------------------------------------------------------
+Suites.Suite HeadLess                                                 | FAIL |
+2 critical tests, 1 passed, 1 failed
+2 tests total, 1 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 critical tests, 1 passed, 1 failed
+2 tests total, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Reports\2018-02-13-12-28-54\pabot_results\Suites.Suite HeadLess\output.xml

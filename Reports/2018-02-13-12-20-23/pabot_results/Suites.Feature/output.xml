@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180213 12:20:26.585" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\feature.robot" id="s1-s1" name="Feature">
+<test id="s1-s1-t1" name="FeatureSyntaxTest">
+<kw name="Given User is on Portal Home Page">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>User is in portal Dashboard</arg>
+</arguments>
+<msg timestamp="20180213 12:20:27.177" level="INFO">User is in portal Dashboard</msg>
+<status status="PASS" endtime="20180213 12:20:27.177" starttime="20180213 12:20:27.177"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:20:27.177" starttime="20180213 12:20:27.176"></status>
+</kw>
+<kw name="When User Navigate to Home Page">
+<kw name="Get Browser Path" library="Browser_select">
+<arguments>
+<arg>${browser_name}</arg>
+</arguments>
+<assign>
+<var>${bPath}</var>
+</assign>
+<msg timestamp="20180213 12:20:27.193" level="INFO">${bPath} = ..\\Drivers\\chromedriver.exe</msg>
+<status status="PASS" endtime="20180213 12:20:27.193" starttime="20180213 12:20:27.178"></status>
+</kw>
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${browser_name}</arg>
+<arg>executable_path=${bPath}</arg>
+</arguments>
+<msg timestamp="20180213 12:20:27.193" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20180213 12:20:39.898" starttime="20180213 12:20:27.193"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://gwportal.cloudapp.eyme.net/gateway-portal/html</arg>
+</arguments>
+<msg timestamp="20180213 12:20:39.899" level="INFO">Opening url 'http://gwportal.cloudapp.eyme.net/gateway-portal/html'</msg>
+<status status="PASS" endtime="20180213 12:21:04.264" starttime="20180213 12:20:39.898"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:21:04.264" starttime="20180213 12:20:27.177"></status>
+</kw>
+<kw name="Then Message displayed Home Successfully">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180213 12:21:09.267" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180213 12:21:09.267" starttime="20180213 12:21:04.267"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180213 12:21:09.581" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 12:21:09.582" starttime="20180213 12:21:09.268"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Successfully Navigated to portal</arg>
+</arguments>
+<msg timestamp="20180213 12:21:09.582" level="INFO">Successfully Navigated to portal</msg>
+<status status="PASS" endtime="20180213 12:21:09.582" starttime="20180213 12:21:09.582"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180213 12:21:12.823" starttime="20180213 12:21:09.583"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:21:12.824" starttime="20180213 12:21:04.266"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:21:12.824" critical="yes" starttime="20180213 12:20:27.176"></status>
+</test>
+<status status="PASS" endtime="20180213 12:21:12.825" starttime="20180213 12:20:26.641"></status>
+</suite>
+<status status="PASS" endtime="20180213 12:21:12.829" starttime="20180213 12:20:26.595"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="1">Suites</stat>
+<stat fail="0" id="s1-s1" name="Feature" pass="1">Suites.Feature</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

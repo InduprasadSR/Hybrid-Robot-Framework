@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180213 12:28:55.145" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\Suite_HeadLess.robot" id="s1-s1" name="Suite HeadLess">
+<test id="s1-s1-t1" name="GW_Portal">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.501" starttime="20180213 12:28:55.501"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.501" starttime="20180213 12:28:55.501"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:28:55.501" critical="yes" starttime="20180213 12:28:55.500"></status>
+</test>
+<test id="s1-s1-t2" name="GW_Portal_HeadLess">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.502" starttime="20180213 12:28:55.502"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.502" starttime="20180213 12:28:55.502"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:28:55.502" critical="yes" starttime="20180213 12:28:55.502"></status>
+</test>
+<status status="PASS" endtime="20180213 12:28:55.503" starttime="20180213 12:28:55.180"></status>
+</suite>
+<suite source="C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\API.robot" id="s1-s2" name="API">
+<test id="s1-s2-t1" name="Get_Value">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.730" starttime="20180213 12:28:55.730"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:28:55.730" critical="yes" starttime="20180213 12:28:55.729"></status>
+</test>
+<test id="s1-s2-t2" name="Create_Dictionary">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.731" starttime="20180213 12:28:55.731"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:28:55.731" critical="yes" starttime="20180213 12:28:55.730"></status>
+</test>
+<status status="PASS" endtime="20180213 12:28:55.731" starttime="20180213 12:28:55.504"></status>
+</suite>
+<suite source="C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\feature.robot" id="s1-s3" name="Feature">
+<test id="s1-s3-t1" name="FeatureSyntaxTest">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180213 12:28:55.744" starttime="20180213 12:28:55.744"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:28:55.745" critical="yes" starttime="20180213 12:28:55.744"></status>
+</test>
+<status status="PASS" endtime="20180213 12:28:55.745" starttime="20180213 12:28:55.732"></status>
+</suite>
+<status status="PASS" endtime="20180213 12:28:55.746" starttime="20180213 12:28:55.155"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="5">Suites</stat>
+<stat fail="0" id="s1-s1" name="Suite HeadLess" pass="2">Suites.Suite HeadLess</stat>
+<stat fail="0" id="s1-s2" name="API" pass="2">Suites.API</stat>
+<stat fail="0" id="s1-s3" name="Feature" pass="1">Suites.Feature</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180213 12:28:55.127" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\Suite_HeadLess.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180213 12:28:55.128" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\API.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180213 12:28:55.130" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\feature.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180213 12:28:55.452" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.452" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.453" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.453" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.453" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.453" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.484" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Keywords\policyCenter.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180213 12:28:55.491" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\PythonUtils\HeadLess.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180213 12:28:55.495" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Keywords\GW_Portal.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180213 12:28:55.735" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.735" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.735" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.736" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.736" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20180213 12:28:55.736" level="ERROR">Error in file 'C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\Object Repository\Locators.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180213 12:46:46.424" generator="Robot 3.0.2 (Python 2.7.14 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\Induprasad.SR\Desktop\RF\Robot_Framework\TestCases\Suite_HeadLess.robot" id="s1-s1" name="Suite HeadLess">
+<test id="s1-s1-t1" name="GW_Portal">
+<kw name="OpenPortal" library="GW_Portal">
+<kw name="Get Browser Path" library="Browser_select">
+<arguments>
+<arg>${browser_name}</arg>
+</arguments>
+<assign>
+<var>${bPath}</var>
+</assign>
+<msg timestamp="20180213 12:46:47.097" level="INFO">${bPath} = ..\\Drivers\\chromedriver.exe</msg>
+<status status="PASS" endtime="20180213 12:46:47.097" starttime="20180213 12:46:47.083"></status>
+</kw>
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>${browser_name}</arg>
+<arg>executable_path=${bPath}</arg>
+</arguments>
+<msg timestamp="20180213 12:46:47.097" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20180213 12:46:57.515" starttime="20180213 12:46:47.097"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://gwportal.cloudapp.eyme.net/gateway-portal/html/</arg>
+</arguments>
+<msg timestamp="20180213 12:46:57.516" level="INFO">Opening url 'http://gwportal.cloudapp.eyme.net/gateway-portal/html/'</msg>
+<status status="PASS" endtime="20180213 12:47:05.081" starttime="20180213 12:46:57.516"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<status status="PASS" endtime="20180213 12:47:05.082" starttime="20180213 12:47:05.082"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${quoteLink}</arg>
+</arguments>
+<msg timestamp="20180213 12:47:05.083" level="INFO">Clicking element 'xpath=//a[@ui-sref='newQuoteSearch']'.</msg>
+<status status="PASS" endtime="20180213 12:47:11.217" starttime="20180213 12:47:05.083"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${companyName}</arg>
+<arg>Company123</arg>
+</arguments>
+<msg timestamp="20180213 12:47:11.219" level="INFO">Typing text 'Company123' into text field 'xpath=//span[contains(text(),'Company')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:47:20.550" starttime="20180213 12:47:11.218"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${portal_Search_button}</arg>
+</arguments>
+<msg timestamp="20180213 12:47:20.551" level="INFO">Clicking element 'xpath=//span[contains(text(),'Company')]/..//..//..//..//..//..//..//button[contains(text(),'Search')]'.</msg>
+<status status="PASS" endtime="20180213 12:47:26.744" starttime="20180213 12:47:20.550"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${countinuetoNewCutomer}</arg>
+</arguments>
+<msg timestamp="20180213 12:47:26.745" level="INFO">Clicking element 'xpath=//button[contains(text(),'Continue as a New Customer')]'.</msg>
+<status status="PASS" endtime="20180213 12:47:33.219" starttime="20180213 12:47:26.744"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Address_Line_1}</arg>
+<arg>21st Main</arg>
+</arguments>
+<msg timestamp="20180213 12:47:33.221" level="INFO">Typing text '21st Main' into text field 'xpath=//label/span[contains(text(),'Address Line 1')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:47:42.545" starttime="20180213 12:47:33.220"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${company_city}</arg>
+<arg>Montgomery</arg>
+</arguments>
+<msg timestamp="20180213 12:47:42.545" level="INFO">Typing text 'Montgomery' into text field 'xpath=//label//span[contains(text(),'City')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:47:51.794" starttime="20180213 12:47:42.545"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${company_zip_code}</arg>
+<arg>36043</arg>
+</arguments>
+<msg timestamp="20180213 12:47:51.794" level="INFO">Typing text '36043' into text field 'xpath=//label//span[contains(text(),'ZIP')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:48:01.032" starttime="20180213 12:47:51.794"></status>
+</kw>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Deprecated. Use `Select From List By Label/Value/Index` instead.</doc>
+<arguments>
+<arg>${state_select}</arg>
+<arg>Alabama</arg>
+</arguments>
+<msg timestamp="20180213 12:48:01.033" level="INFO">Selecting option(s) 'Alabama' from list 'xpath=//span[contains(text(),'Email')]//..//..//..//..//..//label//span[contains(text(),'State')]//..//..//select'.</msg>
+<status status="PASS" endtime="20180213 12:48:25.337" starttime="20180213 12:48:01.033"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180213 12:48:28.730" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 12:48:28.730" starttime="20180213 12:48:25.337"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180213 12:48:35.023" starttime="20180213 12:48:28.731"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:48:35.023" starttime="20180213 12:46:47.083"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180213 12:48:35.025" starttime="20180213 12:48:35.024"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:48:35.025" critical="yes" starttime="20180213 12:46:47.082"></status>
+</test>
+<test id="s1-s1-t2" name="GW_Portal_HeadLess">
+<kw name="OpenPortalHeadLess" library="GW_Portal">
+<kw name="HeadLess" library="HeadLess">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${options}</var>
+</assign>
+<msg timestamp="20180213 12:48:35.033" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0422B5F0&gt;</msg>
+<status status="PASS" endtime="20180213 12:48:35.033" starttime="20180213 12:48:35.031"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>headless</arg>
+</arguments>
+<status status="PASS" endtime="20180213 12:48:35.034" starttime="20180213 12:48:35.033"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>disable-gpu</arg>
+</arguments>
+<status status="PASS" endtime="20180213 12:48:35.036" starttime="20180213 12:48:35.035"></status>
+</kw>
+<kw name="Create Webdriver" library="Selenium2Library">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>executable_path=C:\\Users\\Induprasad.SR\\Desktop\\RF\\Robot_Framework\\Drivers\\chromedriver.exe</arg>
+<arg>chrome_options=${options}</arg>
+</arguments>
+<msg timestamp="20180213 12:48:35.038" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" endtime="20180213 12:48:40.366" starttime="20180213 12:48:35.036"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://gwportal.cloudapp.eyme.net/gateway-portal/html/</arg>
+</arguments>
+<msg timestamp="20180213 12:48:40.367" level="INFO">Opening url 'http://gwportal.cloudapp.eyme.net/gateway-portal/html/'</msg>
+<status status="PASS" endtime="20180213 12:49:31.864" starttime="20180213 12:48:40.366"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180213 12:49:32.975" starttime="20180213 12:49:31.864"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:49:32.975" starttime="20180213 12:48:35.030"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<status status="PASS" endtime="20180213 12:49:32.976" starttime="20180213 12:49:32.976"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${quoteLink}</arg>
+</arguments>
+<msg timestamp="20180213 12:49:32.977" level="INFO">Clicking element 'xpath=//a[@ui-sref='newQuoteSearch']'.</msg>
+<status status="PASS" endtime="20180213 12:49:35.309" starttime="20180213 12:49:32.976"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${companyName}</arg>
+<arg>Company123</arg>
+</arguments>
+<msg timestamp="20180213 12:49:35.311" level="INFO">Typing text 'Company123' into text field 'xpath=//span[contains(text(),'Company')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:49:38.654" starttime="20180213 12:49:35.310"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${portal_Search_button}</arg>
+</arguments>
+<msg timestamp="20180213 12:49:38.655" level="INFO">Clicking element 'xpath=//span[contains(text(),'Company')]/..//..//..//..//..//..//..//button[contains(text(),'Search')]'.</msg>
+<status status="PASS" endtime="20180213 12:49:40.833" starttime="20180213 12:49:38.654"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${countinuetoNewCutomer}</arg>
+</arguments>
+<msg timestamp="20180213 12:49:40.833" level="INFO">Clicking element 'xpath=//button[contains(text(),'Continue as a New Customer')]'.</msg>
+<status status="PASS" endtime="20180213 12:49:43.251" starttime="20180213 12:49:40.833"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Address_Line_1}</arg>
+<arg>21st Main</arg>
+</arguments>
+<msg timestamp="20180213 12:49:43.253" level="INFO">Typing text '21st Main' into text field 'xpath=//label/span[contains(text(),'Address Line 1')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:49:46.522" starttime="20180213 12:49:43.252"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${company_city}</arg>
+<arg>Montgomery</arg>
+</arguments>
+<msg timestamp="20180213 12:49:46.523" level="INFO">Typing text 'Montgomery' into text field 'xpath=//label//span[contains(text(),'City')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:49:49.824" starttime="20180213 12:49:46.523"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${company_zip_code}</arg>
+<arg>36043</arg>
+</arguments>
+<msg timestamp="20180213 12:49:49.826" level="INFO">Typing text '36043' into text field 'xpath=//label//span[contains(text(),'ZIP')]//..//..//input'.</msg>
+<status status="PASS" endtime="20180213 12:49:53.095" starttime="20180213 12:49:49.825"></status>
+</kw>
+<kw name="Select From List" library="Selenium2Library">
+<doc>Deprecated. Use `Select From List By Label/Value/Index` instead.</doc>
+<arguments>
+<arg>${state_select}</arg>
+<arg>Alabama</arg>
+</arguments>
+<msg timestamp="20180213 12:49:53.097" level="INFO">Selecting option(s) 'Alabama' from list 'xpath=//span[contains(text(),'Email')]//..//..//..//..//..//label//span[contains(text(),'State')]//..//..//select'.</msg>
+<status status="PASS" endtime="20180213 12:50:01.356" starttime="20180213 12:49:53.096"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180213 12:50:02.615" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180213 12:50:02.615" starttime="20180213 12:50:01.357"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180213 12:50:06.672" starttime="20180213 12:50:02.615"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:50:06.673" starttime="20180213 12:48:35.030"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20180213 12:50:06.674" starttime="20180213 12:50:06.673"></status>
+</kw>
+<status status="PASS" endtime="20180213 12:50:06.674" critical="yes" starttime="20180213 12:48:35.028"></status>
+</test>
+<status status="PASS" endtime="20180213 12:50:06.676" starttime="20180213 12:46:46.472"></status>
+</suite>
+<status status="PASS" endtime="20180213 12:50:06.681" starttime="20180213 12:46:46.436"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Suites" pass="2">Suites</stat>
+<stat fail="0" id="s1-s1" name="Suite HeadLess" pass="2">Suites.Suite HeadLess</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
