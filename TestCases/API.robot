@@ -6,7 +6,7 @@ Library           ../PythonUtils/API_Post_Request.py
 
 *** Test Cases ***
 # Get_Value
-#     Create Session      api_session     http://disbbe-dev.northcentralus.cloudapp.azure.com:8080
+#     Create Session      api_session     http://yourEndPoint.azure.com:8080
 #     ${response}  Get Request     api_session     createPolicy
 #     ${json} =  Set Variable     ${response.json()}
 #     ${status_Code}=  Set Variable     ${response.status_code}
