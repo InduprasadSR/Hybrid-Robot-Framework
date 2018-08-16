@@ -20,7 +20,7 @@ User is on Portal Home Page
 User Navigate to Home Page 
     ${bPath}  get_browser_path     ${browser_name}
     Create Webdriver       ${browser_name}       executable_path=${bPath}
-    Go To       http://gwportal.cloudapp.eyme.net/gateway-portal/html
+    Go To       http://your_url/gateway-portal/html
 
 Message displayed Home Successfully 
     Sleep   5s
