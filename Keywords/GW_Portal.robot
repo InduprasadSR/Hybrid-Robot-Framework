@@ -10,7 +10,7 @@ Resource          ../PythonUtils/HeadLess.robot
 OpenPortal
     ${bPath}  get_browser_path     ${browser_name}             
     Create Webdriver       ${browser_name}       executable_path=${bPath}
-    Go To    http://gwportal.cloudapp.eyme.net/gateway-portal/html/  
+    Go To    http://url/gateway-portal/html/  
     Set Selenium Speed   3s  
     Click Element   ${quoteLink} 
     Input Text      ${companyName}               Company123
