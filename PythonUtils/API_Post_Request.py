@@ -12,7 +12,7 @@ with open('../PythonUtils/json_request.json') as json_data:
 
 def post_json_request():
     
-    req = urllib2.Request('http://disbbe-dev.northcentralus.cloudapp.azure.com:8080/createPolicy')
+    req = urllib2.Request('http://end_point.azure.com:8080/createPolicy')
     req.add_header('Content-Type','application/json')
     #data = json.dumps(payload)
     headers = {'content-type': 'application/json'}
