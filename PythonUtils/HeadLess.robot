@@ -12,5 +12,5 @@ HeadLess
     Call Method    ${options}    add_argument    headless
     Call Method    ${options}    add_argument    disable-gpu
     Create Webdriver       Chrome       executable_path=C:\\Users\\Induprasad.SR\\Desktop\\RF\Robot_Framework\\Drivers\\chromedriver.exe            chrome_options=${options}
-    Goto  http://gwportal.cloudapp.eyme.net/gateway-portal/html/
+    Goto  http://your_url/gateway-portal/html/
     Maximize Browser Window
