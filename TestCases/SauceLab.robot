@@ -4,7 +4,7 @@ Library           Selenium2Library
 
 *** Variable ***
 
-${RemoteURL}        http://Induprasad123:88b56f5d-04da-4186-b50d-13f9e2f8670d@ondemand.saucelabs.com:80/wd/hub
+${RemoteURL}        http://Induprasad123:*******04da-4186-b50d-13f9e2f8670d@ondemand.saucelabs.com:80/wd/hub
 ${StackBrowser}     Chrome
 ${BROWSER_VERSION}    63
 
